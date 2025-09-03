@@ -8,7 +8,7 @@ interface Message {
   timestamp?: string;
 }
 
-export const useConversation = (apiBaseUrl: string = 'https://f8cc623b2bcb.ngrok-free.app/api') => {
+export const useConversation = (apiBaseUrl: string = 'https://6729874dcd84.ngrok-free.app/api') => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 

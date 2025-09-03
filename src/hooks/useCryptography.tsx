@@ -40,7 +40,7 @@ const logCrypto = (action: string, data?: any) => {
 export const useCryptography = ({ 
   userId, 
   algorithm = CryptoAlgorithm.CRYSTAL_KYBER_MLKEM1024,
-  apiBaseUrl = 'https://f8cc623b2bcb.ngrok-free.app/api',
+  apiBaseUrl = 'https://6729874dcd84.ngrok-free.app/api',
   initializeImmediately = false // MODIFICADO: padrão false
 }: UseCryptographyProps): UseCryptographyReturn => {
   const [isInitialized, setIsInitialized] = useState<boolean>(false);

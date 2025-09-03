@@ -24,7 +24,7 @@ interface UseRealTimeMessagesProps {
 export const useRealTimeMessages = ({
   currentUser,
   otherUser,
-  apiBaseUrl = 'https://f8cc623b2bcb.ngrok-free.app/api',
+  apiBaseUrl = 'https://6729874dcd84.ngrok-free.app/api',
   pollingInterval = 5000,
   enabled = true,
   onDecryptMessage,

@@ -26,7 +26,7 @@ const useLogin = (): UseLoginReturn => {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
-  const API_BASE_URL = 'https://f8cc623b2bcb.ngrok-free.app/api/users'; // Ajuste conforme sua configuração
+  const API_BASE_URL = 'https://6729874dcd84.ngrok-free.app/api/users'; // Ajuste conforme sua configuração
 
   const login = async (loginData: LoginData): Promise<boolean> => {
     setLoading(true);

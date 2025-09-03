@@ -23,7 +23,7 @@ interface UseMessageSenderReturn {
   error: string | null;
 }
 
-export const useMessageSender = (apiBaseUrl: string = 'https://f8cc623b2bcb.ngrok-free.app/api'): UseMessageSenderReturn => {
+export const useMessageSender = (apiBaseUrl: string = 'https://6729874dcd84.ngrok-free.app/api'): UseMessageSenderReturn => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 

@@ -38,6 +38,7 @@ const useLogin = (): UseLoginReturn => {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
+          'ngrok-skip-browser-warning': 'true',
         },
       });
 
@@ -57,6 +58,7 @@ const useLogin = (): UseLoginReturn => {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
+          'ngrok-skip-browser-warning': 'true',
         },
       });
 

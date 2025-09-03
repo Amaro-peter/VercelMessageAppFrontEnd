@@ -77,6 +77,7 @@ export const useMessageSender = (apiBaseUrl: string = 'https://6729874dcd84.ngro
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'ngrok-skip-browser-warning': 'true',
         },
         body: JSON.stringify(payload),
       });

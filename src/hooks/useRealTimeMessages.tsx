@@ -195,7 +195,13 @@ export const useRealTimeMessages = ({
     try {
       // CORREÇÃO: Usar a rota /recent que retorna mensagens com encryptedData
       const response = await fetch(
-        `${apiBaseUrl}/messages/recent/${encodeURIComponent(currentUser)}`
+        `${apiBaseUrl}/messages/recent/${encodeURIComponent(currentUser)}`,
+        {
+          headers: {
+            'Content-Type': 'application/json',
+            'ngrok-skip-browser-warning': 'true',
+          },
+        }
       );
       
       if (!response.ok) {

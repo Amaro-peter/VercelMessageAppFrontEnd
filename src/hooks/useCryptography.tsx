@@ -105,6 +105,9 @@ export const useCryptography = ({
 
       await fetch(`${apiBaseUrl}/health`, {
         method: 'GET',
+        headers: {
+          'ngrok-skip-browser-warning': 'true',
+        },
         signal: controller.signal
       });
       
@@ -118,6 +121,9 @@ export const useCryptography = ({
 
         await fetch(`${apiBaseUrl}/users/public-key/test`, {
           method: 'GET',
+          headers: {
+            'ngrok-skip-browser-warning': 'true',
+          },
           signal: controller.signal
         });
         
@@ -147,7 +153,7 @@ export const useCryptography = ({
       const response = await fetch(`${apiBaseUrl}/users/public-key/${encodeURIComponent(targetUserId)}`, {
         method: 'GET',
         headers: {
-          'Content-Type': 'application/json',
+          'ngrok-skip-browser-warning': 'true',
         },
         signal: controller.signal
       });
@@ -216,6 +222,7 @@ export const useCryptography = ({
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'ngrok-skip-browser-warning': 'true',
         },
         body: JSON.stringify(payload),
         signal: controller.signal

@@ -17,7 +17,12 @@ export const useConversation = (apiBaseUrl: string = 'https://6729874dcd84.ngrok
     setError(null);
 
     try {
-      const response = await fetch(`${apiBaseUrl}/messages/conversation?user1=${encodeURIComponent(user1)}&user2=${encodeURIComponent(user2)}`);
+      const response = await fetch(`${apiBaseUrl}/messages/conversation?user1=${encodeURIComponent(user1)}&user2=${encodeURIComponent(user2)}`, {
+        headers: {
+          'Content-Type': 'application/json',
+          'ngrok-skip-browser-warning': 'true',
+        },
+      });
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
